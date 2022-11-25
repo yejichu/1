@@ -1,0 +1,72 @@
+<!DOCTYPE httml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火影木马墙</title>
+    <style>
+         body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            perspective: 1500px;
+       }
+       #pic{
+           margin-top: 500px;
+           display: flex;
+           width: 350px;
+           height: 200px;
+           transform-style: preserve-3d;
+           animation: action 20s linear infinite;
+       }
+       #pic:hover{
+            cursor: pointer;
+            animation-play-state: paused;
+        }
+       @keyframes action{
+           form{
+               transform: rotateY(0deg);
+           }
+           to{
+               transform: rotateY(360deg);
+           }
+       }
+        #pic img{
+            position: absolute;
+            width: 350px;
+            height: 200px;
+            -webkit-box-reflect: below 15px -webkit-linear-gradient(transparent 10%,rgba(255,255,255,0.3));
+        }
+        #pic img:nth-child(1){
+            transform: translateZ(500px);
+        }
+        #pic img:nth-child(2){
+            transform: rotateY(60deg) translateZ(500px);
+        }
+        #pic img:nth-child(3){
+            transform: rotateY(120deg) translateZ(500px);
+        }
+        #pic img:nth-child(4){
+            transform: rotateY(180deg) translateZ(500px);
+        }
+        #pic img:nth-child(5){
+            transform: rotateY(240deg) translateZ(500px);
+        }
+        #pic img:nth-child(6){
+            transform: rotateY(300deg) translateZ(500px);
+        }
+    </style>
+</head>
+<body> 
+    <div id="pic">
+        <img src="https://yejichu.github.io/1/图像/1.jpg">
+        <img src="https://yejichu.github.io/1/图像/2.jpg">
+        <img src="https://yejichu.github.io/1/图像/3.jpg">
+        <img src="https://yejichu.github.io/1/图像/4.jpg">
+        <img src="https://yejichu.github.io/1/图像/5.jpg">
+        <img src="https://yejichu.github.io/1/图像/6.jpg">
+</body>
+</html>
